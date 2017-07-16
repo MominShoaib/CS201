@@ -111,6 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="arrays.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="Loops.cpp" />
     <ClCompile Include="pointer.cpp" />

@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
-void update(int *a, int *b) {
-	*a = *a + *b;
-	if (*a > *b)
-	{
-		*b = *b - *a;
-	}
-	else
-	{
-		*b = abs(*b - *a);          // absolute value ??
-	}
+void update(int *a, int *b)
+{
+	int temp = 0;
+	temp = *a;
+
+	*a = temp + *b;
+	*b = temp - *a;
+	*b = abs(*b);
 }
 
 int main() {
